@@ -1,0 +1,31 @@
+{
+  "local": {
+    "provider": "local",
+    "module": "passport-local",
+    "usernameField": "username",
+    "passwordField": "password",
+    "authPath": "/auth/local",
+    "successRedirect": "/auth/account"
+  },
+  "linkedin-login": {
+    "provider": "linkedin",
+    "module": "passport-linkedin",
+    "consumerKey": "xxxxxxxxx",
+    "consumerSecret": "xxxxxxxxx",
+    "callbackURL": "http://localhost:3000/auth/linkedin/callback",
+    "authPath": "/auth/linkedin",
+    "callbackPath": "/auth/linkedin/callback",
+    "successRedirect": "/auth/account"
+  },
+  "linkedin-link": {
+    "provider": "linkedin",
+    "module": "passport-linkedin",
+    "consumerKey": "xxxxxxxxx",
+    "consumerSecret": "xxxxxxxxx",
+    "callbackURL": "http://localhost:3000/link/linkedin/callback",
+    "authPath": "/link/linkedin",
+    "callbackPath": "/link/linkedin/callback",
+    "successRedirect": "/link/account",
+    "link": true
+  }
+}
